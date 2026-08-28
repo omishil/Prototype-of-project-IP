@@ -15,168 +15,195 @@
         }
 
 
-        /* ================= NAVBAR ================= */
+      /* ================= NAVBAR ================= */
 
-        nav {
-            height: 75px;
+nav {
+    background-color: #1f2937;
+    color: #ffffff;
 
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+    height: 75px;
 
-            padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-            border-bottom: 1px solid #ddd;
-        }
+    padding: 0 8%;
 
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-        }
+    border-bottom: 1px solid #ddd;
+}
 
-        .nav-links {
-            display: flex;
-            gap: 35px;
-        }
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
 
-        .nav-button {
-            padding: 10px 20px;
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
 
-            border: 1px solid #999;
-            border-radius: 6px;
+.nav-button {
+    padding: 10px 20px;
 
-            background: none;
-        }
+    border: 1px solid #999;
+    border-radius: 6px;
 
-
-        /* ================= HOME ================= */
-
-        .home {
-            min-height: 600px;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            padding: 80px 10%;
-        }
+    background: none;
+    color: #ffffff;
+}
 
 
-        /* LEFT SIDE */
+/* ================= HOME ================= */
 
-        .home-text {
-            width: 50%;
-        }
+.home {
+    background-color: #f4f6f8;
+    color: #1f2937;
 
-        .welcome {
-            font-size: 13px;
+    min-height: 600px;
 
-            font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-            letter-spacing: 2px;
-
-            margin-bottom: 20px;
-        }
-
-        .home-text h1 {
-            font-size: 52px;
-
-            line-height: 1.2;
-
-            margin-bottom: 25px;
-        }
-
-        .description {
-            font-size: 16px;
-
-            line-height: 1.7;
-
-            max-width: 550px;
-
-            margin-bottom: 30px;
-        }
-
-        .explore-button {
-            padding: 14px 25px;
-
-            border: 1px solid #777;
-            border-radius: 7px;
-
-            background: none;
-
-            font-size: 15px;
-        }
+    padding: 80px 10%;
+}
 
 
-        /* ================= RIGHT SIDE ================= */
+/* LEFT SIDE */
 
-        .learning-box {
-            width: 42%;
+.home-text {
+    width: 50%;
+}
 
-            padding: 30px;
+.welcome {
+    color: #6b7280;
 
-            border: 1px solid #ddd;
+    font-size: 13px;
 
-            border-radius: 15px;
-        }
+    font-weight: bold;
 
-        .learning-box h2 {
-            font-size: 25px;
+    letter-spacing: 2px;
 
-            margin-bottom: 8px;
-        }
+    margin-bottom: 20px;
+}
 
-        .learning-box > p {
-            font-size: 14px;
+.home-text h1 {
+    color: #111827;
 
-            margin-bottom: 25px;
-        }
+    font-size: 52px;
 
+    line-height: 1.2;
 
-        /* LEARNING ITEMS */
+    margin-bottom: 25px;
+}
 
-        .learning-item {
-            display: flex;
+.description {
+    color: #4b5563;
 
-            align-items: center;
+    font-size: 16px;
 
-            gap: 15px;
+    line-height: 1.7;
 
-            padding: 15px;
+    max-width: 550px;
 
-            margin-bottom: 12px;
+    margin-bottom: 30px;
+}
 
-            border: 1px solid #ddd;
+.explore-button {
+    padding: 14px 25px;
 
-            border-radius: 10px;
-        }
+    border: 1px solid #777;
+    border-radius: 7px;
 
-        .icon {
-            width: 45px;
-            height: 45px;
+    background: none;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    color: #1f2937;
 
-            border: 1px solid #aaa;
-
-            border-radius: 8px;
-
-            font-size: 21px;
-        }
-
-        .learning-item h3 {
-            font-size: 16px;
-
-            margin-bottom: 3px;
-        }
-
-        .learning-item p {
-            font-size: 12px;
-        }
+    font-size: 15px;
+}
 
 
+/* ================= RIGHT SIDE ================= */
+
+.learning-box {
+    width: 42%;
+
+    padding: 30px;
+
+    background-color: #ffffff;
+    color: #1f2937;
+
+    border: 1px solid #ddd;
+
+    border-radius: 15px;
+}
+
+.learning-box h2 {
+    color: #111827;
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+.learning-box > p {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/* LEARNING ITEMS */
+
+.learning-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    background-color: #f9fafb;
+    color: #1f2937;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #aaa;
+
+    border-radius: 8px;
+
+    font-size: 21px;
+}
+
+.learning-item h3 {
+    color: #1f2937;
+
+    font-size: 16px;
+
+    margin-bottom: 3px;
+}
+
+.learning-item p {
+    color: #6b7280;
+
+    font-size: 12px;
+}
         /* ================= WHY SECTION ================= */
 
         .why {
@@ -275,6 +302,7 @@
         }
 
         .courses {
+            /* background-color: #777; */
             display: flex;
             justify-content: center;
             gap: 30px;
@@ -282,6 +310,8 @@
         }
 
         .course-card {
+            color: white;
+            background-color: #120a45;
             width: 280px;
             padding: 20px;
             border: 1px solid black;
@@ -291,7 +321,7 @@
         }
 
         .badge {
-            border: 1px solid black;
+            border: 1px solid #ccf6f8;
             padding: 5px;
         }
 
@@ -302,13 +332,14 @@
         }
 
         .view-course {
-            border: 1px solid black;
+            border: 1px solid #cbd8e1;
             padding: 8px;
             color: black;
             text-decoration: none;
             margin-left: 40px;
             margin-top: 10px;
-            
+            color: white;
+            border-radius: 5px;
         }
 
         /* 4th portion */
@@ -322,6 +353,7 @@ h1 {
 }
 
 .calendar {
+    background-color: #ebfdff;
     width: 600px;
     margin: 30px auto;
     border: 1px solid black;
@@ -473,9 +505,10 @@ h1 {
 }
 
 .event {
+    color: rgba(255, 255, 255, 0.64);
     width: 20%;
     border: 1px solid rgb(0, 0, 0);
-    
+    background-color: rgb(84, 16, 84);
 }
 .upcomingEventsection{
     display: flex;
@@ -496,6 +529,7 @@ h1 {
 }
 
 .faq {
+    background-color: beige;
     width: 600px;
     border: 1px solid black;
     padding: 15px;
@@ -503,6 +537,7 @@ h1 {
 }
 
 .contact {
+    background-color: beige;
     width: 600px;
     border: 1px solid black;
     padding: 15px;
@@ -510,6 +545,7 @@ h1 {
 }
 
 form {
+    background-color: #c7bdbd;
     width: 500px;
     border: 1px solid black;
     padding: 20px;
@@ -638,7 +674,7 @@ h2 {
 
 /* Quiz / Recommendation */
 
-.faq {
+/* .faq {
     padding: 25px;
     border: 1px solid #ddd;
     border-radius: 12px;
@@ -647,7 +683,7 @@ h2 {
 
 .faq h3 {
     margin-top: 0;
-}
+} */
 
 
 /* Buttons */
