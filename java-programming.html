@@ -22,13 +22,13 @@
             Track your learning progress
         </p>
 
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="containerOfInnerElements    relative  bg-white p-6 rounded-lg shadow-md">
 
             <h2 class="text-2xl font-bold text-gray-800 mb-6">
                 Learning Path
             </h2>
 
-            <div class="space-y-5">
+            <div class="containerOfChecks       space-y-5">
 
                 <label class="flex items-center gap-3">
                     <input type="checkbox" class="w-5 h-5">
@@ -54,13 +54,37 @@
                     <input type="checkbox" class="w-5 h-5">
                     <span>Java Projects</span>
                 </label>
-
-            </div>
-
+<div class="btn flex flex-col w-full absolute left-[300px] top-0">
+            <button class="w-20  block border border-black rounded px-1 bg-blue-900 text-white">add</button>
+<input type="text" class="btnInput         w-[200px] h-4 border border-black   left-20 mt-[4px]"></div>
         </div>
+        
 
     </div>
 <script>
+//event for add
+document.querySelector("button").addEventListener("click", ()=>{
+    let label= document.createElement("label");
+    let buttonContent= document.querySelector(".btnInput")
+    label.classList.add("flex","items-center","gap-3");
+    label.innerHTML=
+     `  <input type="checkbox" class="w-5 h-5">
+                    <span>${buttonContent.value}</span>
+        `            
+
+let containerOFChecks= document.querySelector(".containerOfChecks")
+;
+containerOFChecks.append(label)
+
+let newCheckbx= label.querySelector("input")
+newCheckbx.addEventListener("click", ()=>{
+let conten= label.querySelector("span").classList.toggle("line-through")
+})
+
+
+
+})
+
     document.querySelectorAll("input").forEach((input)=>{
         input.addEventListener("click", ()=>{
             input.nextElementSibling.classList.toggle("line-through")
