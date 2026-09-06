@@ -60,7 +60,14 @@
         </div>
 
     </div>
-
+<script>
+    document.querySelectorAll("input").forEach((input)=>{
+        input.addEventListener("click", ()=>{
+            input.nextElementSibling.classList.toggle("line-through")
+        })
+    })
+    
+</script>
 </body>
 
 </html>
