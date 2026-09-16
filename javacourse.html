@@ -12,7 +12,9 @@
 
 <body class="bg-gray-100 min-h-screen">
 
-    <div class="max-w-5xl mx-auto px-6 py-10">
+    <div class="max-w-6xl mx-auto px-6 py-10">
+
+        <!-- Course Header -->
 
         <h1 class="text-3xl font-bold text-center text-gray-800 mb-2">
             Java Programming
@@ -22,21 +24,109 @@
             Learn Java Programming step by step
         </p>
 
+
+        <!-- Course Content -->
+
         <div class="bg-white p-6 rounded-lg shadow-md">
 
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">
                 Course Content
             </h2>
 
-            <div class="aspect-video">
 
-                <iframe class="w-full h-full" src="https://www.youtube.com/embed/bSrm9RXwBaI?si=47P4yVhpO5WxW0Wj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+
+                <!-- Lessons -->
+
+                <div>
+
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">
+                        Lessons
+                    </h3>
+
+                    <div class="space-y-2">
+
+                        <button
+                            onclick="changeLesson('Lesson 1: Introduction to Java', 'https://www.youtube.com/embed/bSrm9RXwBaI')"
+                            class="w-full text-left p-3 rounded-lg bg-blue-500 text-white hover:bg-blue-600">
+                            Lesson 1
+                        </button>
+
+                        <button
+                            onclick="changeLesson('Lesson 2: Java Basics', 'https://www.youtube.com/embed/VIDEO_ID_2')"
+                            class="w-full text-left p-3 rounded-lg bg-gray-100 hover:bg-gray-200">
+                            Lesson 2
+                        </button>
+
+                        <button
+                            onclick="changeLesson('Lesson 3: Variables and Data Types', 'https://www.youtube.com/embed/VIDEO_ID_3')"
+                            class="w-full text-left p-3 rounded-lg bg-gray-100 hover:bg-gray-200">
+                            Lesson 3
+                        </button>
+
+                        <button
+                            onclick="changeLesson('Lesson 4: Conditional Statements', 'https://www.youtube.com/embed/VIDEO_ID_4')"
+                            class="w-full text-left p-3 rounded-lg bg-gray-100 hover:bg-gray-200">
+                            Lesson 4
+                        </button>
+
+                        <button
+                            onclick="changeLesson('Lesson 5: Loops in Java', 'https://www.youtube.com/embed/VIDEO_ID_5')"
+                            class="w-full text-left p-3 rounded-lg bg-gray-100 hover:bg-gray-200">
+                            Lesson 5
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Video -->
+
+                <div class="md:col-span-3">
+
+                    <h3 id="lessonTitle" class="text-2xl font-bold text-gray-800 mb-4">
+                        Lesson 1: Introduction to Java
+                    </h3>
+
+                    <div class="aspect-video">
+
+                        <iframe
+                            id="lessonVideo"
+                            class="w-full h-full rounded-lg"
+                            src="https://www.youtube.com/embed/bSrm9RXwBaI"
+                            title="Java Programming Lesson"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
     </div>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function changeLesson(title, video) {
+
+            document.getElementById("lessonTitle").innerText = title;
+
+            document.getElementById("lessonVideo").src = video;
+
+        }
+
+    </script>
 
 </body>
 
