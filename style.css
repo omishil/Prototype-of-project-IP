@@ -396,7 +396,22 @@ nav {
 .profile button:hover {
     background-color: #16877f;
 }
+#startLearningBtn {
+    display: inline-block;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
+#startLearningBtn:hover {
+    background: linear-gradient(135deg, #4338ca, #6d28d9);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
 
 /* ================= COURSES ================= */
 
