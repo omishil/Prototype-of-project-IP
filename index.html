@@ -7,65 +7,104 @@
 
     <title>CSE Academy</title>
 
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
-<body>
+<body class="m-0 bg-[#f3f7f9] text-[#172033] font-sans leading-relaxed">
 
     <!-- ================= NAVBAR ================= -->
 
-   <nav>
-    <div class="nav-container">
+    <nav
+        class="w-full bg-[#102a43] text-white sticky top-0 z-[1000] shadow-[0_2px_10px_rgba(0,0,0,0.12)]">
 
-        <div class="logo">
-            CSE Academy
+        <div
+            class="w-[90%] md:w-[84%] max-w-[1200px] min-h-[70px] mx-auto py-3 md:py-0 flex flex-wrap items-center justify-between gap-3">
+
+            <div class="text-[20px] md:text-[23px] font-bold">
+                CSE Academy
+            </div>
+
+            <div
+                class="order-3 md:order-none w-full md:w-auto flex justify-center md:justify-start gap-[22px] md:gap-8">
+
+                <a
+                    href="#courses"
+                    class="text-[#dce8f0] no-underline text-[15px] transition duration-200 hover:text-[#62d0c8]">
+                    Courses
+                </a>
+
+                <a
+                    href="#why"
+                    class="text-[#dce8f0] no-underline text-[15px] transition duration-200 hover:text-[#62d0c8]">
+                    About
+                </a>
+
+                <a
+                    href="#contact"
+                    class="text-[#dce8f0] no-underline text-[15px] transition duration-200 hover:text-[#62d0c8]">
+                    Contact
+                </a>
+
+            </div>
+
+            <a href="login.html">
+
+                <button
+                    class="px-4 md:px-5 py-2 bg-[#35b7ad] text-white border-none rounded-md text-sm cursor-pointer hover:bg-[#279d95] transition duration-200">
+                    Login
+                </button>
+
+            </a>
+
         </div>
 
-        <div class="nav-links">
-            <a href="#courses">Courses</a>
-            <a href="#why">About</a>
-            <a href="#contact">Contact</a>
-        </div>
+    </nav>
 
-        <a href="login.html">
-            <button class="nav-button">
-                Login
-            </button>
-        </a>
-
-    </div>
-</nav>
 
     <!-- ================= HOME SECTION ================= -->
 
-    <section class="home">
+    <section
+        class="min-h-[650px] flex flex-col lg:flex-row items-center justify-between gap-[35px] lg:gap-[60px] px-[5%] lg:px-[8%] py-[55px] lg:py-[90px] bg-gradient-to-br from-[#e8f4f5] via-[#f7fafb] to-[#e7f0f5]">
 
         <!-- LEFT SIDE -->
 
-        <div class="home-text">
+        <div class="w-full lg:w-[52%]">
 
-            <p class="welcome">
+            <p
+                class="text-[#16877f] text-[13px] font-bold tracking-[2px] mb-[15px]">
                 WELCOME TO CSE ACADEMY
             </p>
 
-            <h1>
+            <h1
+                class="text-[#102a43] text-[38px] md:text-[42px] lg:text-[52px] leading-[1.15] m-0 mb-[25px]">
+
                 Learn CSE.
                 <br>
                 Build Skills.
                 <br>
                 Start Your Career.
+
             </h1>
 
-            <p class="description">
+            <p
+                class="text-[#526273] text-[15px] lg:text-base leading-[1.7] max-w-[550px] mb-[30px]">
+
                 Learn Computer Science through practical courses,
                 projects and beginner-friendly lessons designed to
                 help you build real-world skills.
+
             </p>
 
             <a href="#courses">
-                <button class="explore-button">
+
+                <button
+                    class="px-[23px] py-[13px] bg-[#102a43] text-white border-none rounded-[7px] text-[15px] cursor-pointer transition duration-200 hover:bg-[#16877f]">
+
                     Explore Courses
+
                 </button>
+
             </a>
 
         </div>
@@ -73,27 +112,32 @@
 
         <!-- RIGHT SIDE -->
 
-        <div class="learning-box">
+        <div
+            class="w-full lg:w-[43%] p-[30px] bg-white border border-[#d8e2e8] rounded-[15px] shadow-[0_8px_25px_rgba(24,53,72,0.08)]">
 
-            <h2>
+            <h2 class="text-[#102a43] text-[25px] m-0 mb-2">
                 What Can You Learn?
             </h2>
 
-            <p>
+            <p class="text-[#718096] text-sm mb-[25px]">
                 Build your Computer Science skills in different areas.
             </p>
 
 
-            <div class="learning-item">
+            <div
+                class="flex items-center gap-[15px] p-[15px] mb-3 bg-[#f7fafb] border border-[#e1e8ed] rounded-[10px] transition duration-200 hover:translate-x-1 hover:border-[#8acfc9]">
 
-                <div class="icon">
+                <div
+                    class="w-[45px] h-[45px] shrink-0 flex items-center justify-center bg-[#e4f5f3] rounded-lg text-[21px]">
                     💻
                 </div>
 
                 <div>
-                    <h3>Programming</h3>
+                    <h3 class="text-[#243b53] text-base m-0 mb-[3px]">
+                        Programming
+                    </h3>
 
-                    <p>
+                    <p class="text-[#718096] text-xs m-0">
                         C, C++, Java, Python and more
                     </p>
                 </div>
@@ -101,16 +145,20 @@
             </div>
 
 
-            <div class="learning-item">
+            <div
+                class="flex items-center gap-[15px] p-[15px] mb-3 bg-[#f7fafb] border border-[#e1e8ed] rounded-[10px] transition duration-200 hover:translate-x-1 hover:border-[#8acfc9]">
 
-                <div class="icon">
+                <div
+                    class="w-[45px] h-[45px] shrink-0 flex items-center justify-center bg-[#e4f5f3] rounded-lg text-[21px]">
                     🌐
                 </div>
 
                 <div>
-                    <h3>Web Development</h3>
+                    <h3 class="text-[#243b53] text-base m-0 mb-[3px]">
+                        Web Development
+                    </h3>
 
-                    <p>
+                    <p class="text-[#718096] text-xs m-0">
                         HTML, CSS, JavaScript and modern web
                     </p>
                 </div>
@@ -118,16 +166,20 @@
             </div>
 
 
-            <div class="learning-item">
+            <div
+                class="flex items-center gap-[15px] p-[15px] mb-3 bg-[#f7fafb] border border-[#e1e8ed] rounded-[10px] transition duration-200 hover:translate-x-1 hover:border-[#8acfc9]">
 
-                <div class="icon">
+                <div
+                    class="w-[45px] h-[45px] shrink-0 flex items-center justify-center bg-[#e4f5f3] rounded-lg text-[21px]">
                     🗄️
                 </div>
 
                 <div>
-                    <h3>Database</h3>
+                    <h3 class="text-[#243b53] text-base m-0 mb-[3px]">
+                        Database
+                    </h3>
 
-                    <p>
+                    <p class="text-[#718096] text-xs m-0">
                         SQL, database design and management
                     </p>
                 </div>
@@ -135,16 +187,20 @@
             </div>
 
 
-            <div class="learning-item">
+            <div
+                class="flex items-center gap-[15px] p-[15px] bg-[#f7fafb] border border-[#e1e8ed] rounded-[10px] transition duration-200 hover:translate-x-1 hover:border-[#8acfc9]">
 
-                <div class="icon">
+                <div
+                    class="w-[45px] h-[45px] shrink-0 flex items-center justify-center bg-[#e4f5f3] rounded-lg text-[21px]">
                     🔐
                 </div>
 
                 <div>
-                    <h3>Cybersecurity</h3>
+                    <h3 class="text-[#243b53] text-base m-0 mb-[3px]">
+                        Cybersecurity
+                    </h3>
 
-                    <p>
+                    <p class="text-[#718096] text-xs m-0">
                         Networks, security and ethical hacking
                     </p>
                 </div>
@@ -158,31 +214,38 @@
 
     <!-- ================= WHY SECTION ================= -->
 
-    <section class="why" id="why">
+    <section
+        id="why"
+        class="text-center px-[5%] lg:px-[8%] py-[60px] lg:py-[85px] bg-white">
 
-        <p class="section-title">
+        <p
+            class="text-[#16877f] text-xs font-bold tracking-[2px] mb-[10px]">
             WHY CSE ACADEMY?
         </p>
 
-        <h2>
+        <h2
+            class="text-[#102a43] text-[30px] lg:text-[36px] m-0 mb-[15px]">
             Learn. Practice. Grow.
         </h2>
 
-        <p class="section-description">
+        <p
+            class="text-[#66788a] max-w-[550px] mx-auto mb-[50px]">
             We focus on helping students understand concepts,
             practice their skills and build confidence.
         </p>
 
 
-        <div class="features">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[25px] max-w-[1050px] mx-auto">
 
-            <div class="feature">
+            <div
+                class="p-[30px] bg-[#f7fafb] border border-[#dfe7ec] rounded-xl transition duration-200 hover:-translate-y-1 hover:border-[#91d4cf]">
 
-                <h3>
+                <h3 class="text-[#243b53] mb-3">
                     Practical Learning
                 </h3>
 
-                <p>
+                <p class="text-[#718096] text-sm m-0">
                     Learn concepts through practical examples
                     and projects.
                 </p>
@@ -190,13 +253,14 @@
             </div>
 
 
-            <div class="feature">
+            <div
+                class="p-[30px] bg-[#f7fafb] border border-[#dfe7ec] rounded-xl transition duration-200 hover:-translate-y-1 hover:border-[#91d4cf]">
 
-                <h3>
+                <h3 class="text-[#243b53] mb-3">
                     Beginner Friendly
                 </h3>
 
-                <p>
+                <p class="text-[#718096] text-sm m-0">
                     Simple explanations designed for students
                     starting their CSE journey.
                 </p>
@@ -204,13 +268,14 @@
             </div>
 
 
-            <div class="feature">
+            <div
+                class="p-[30px] bg-[#f7fafb] border border-[#dfe7ec] rounded-xl transition duration-200 hover:-translate-y-1 hover:border-[#91d4cf]">
 
-                <h3>
+                <h3 class="text-[#243b53] mb-3">
                     Career Focused
                 </h3>
 
-                <p>
+                <p class="text-[#718096] text-sm m-0">
                     Build skills that can help you prepare for
                     future internships and jobs.
                 </p>
@@ -224,45 +289,58 @@
 
     <!-- ================= LEARNING PATH ================= -->
 
-    <section class="whereDoYouWantToGoSEction">
+    <section
+        class="px-[5%] lg:px-[8%] py-[60px] lg:py-[75px] bg-[#edf4f6]">
 
-        <h2>
+        <h2
+            class="text-center text-[#102a43] text-[30px] m-0 mb-10">
             Where Do You Want to Go?
         </h2>
 
 
-        <div class="learning-paths">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-[25px] max-w-[1000px] mx-auto">
 
-            <div class="profile">
+            <div
+                class="p-7 bg-white border border-[#d8e2e8] rounded-xl shadow-[0_4px_12px_rgba(20,50,70,0.05)]">
 
-                <h3>
+                <h3 class="text-[#243b53] mt-0">
                     🚀 Start from the Beginning
                 </h3>
 
-                <p>
+                <p class="text-[#66788a] text-sm mb-5">
                     New to programming? Follow a guided path designed
                     for complete beginners.
                 </p>
 
-        <a href="StartLearningBTN.html" id="startLearningBtn">
-    Start Learning
-</a>
+                <a
+                    href="StartLearningBTN.html"
+                    class="inline-block mt-5 bg-gradient-to-br from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold no-underline transition duration-300 hover:from-indigo-700 hover:to-purple-700 hover:shadow-[0_8px_15px_rgba(0,0,0,0.15)]">
+
+                    Start Learning
+
+                </a>
+
             </div>
 
 
-            <div class="profile intermediate">
+            <div
+                class="p-7 bg-[#e8f3fb] border border-[#d8e2e8] rounded-xl shadow-[0_4px_12px_rgba(20,50,70,0.05)]">
 
-                <h3>
+                <h3 class="text-[#243b53] mt-0">
                     ⚡ Level Up Your Skills
                 </h3>
 
-                <p>
+                <p class="text-[#66788a] text-sm mb-5">
                     Already know the basics? Jump into intermediate
                     topics and start building real projects.
                 </p>
 
-                <button>
+                <button
+                    class="px-[18px] py-[10px] bg-[#102a43] text-white border-none rounded-md cursor-pointer hover:bg-[#16877f] transition duration-200">
+
                     View Intermediate Courses
+
                 </button>
 
             </div>
@@ -274,83 +352,100 @@
 
     <!-- ================= COURSES ================= -->
 
-    <section id="courses">
+    <section
+        id="courses"
+        class="px-[5%] lg:px-[8%] py-[60px] lg:py-20 bg-[#f7fafb]">
 
-        <h1>
+        <h1
+            class="text-center text-[#102a43] text-[34px] m-0 mb-10">
             Our Courses
         </h1>
 
-        <div class="courses">
 
-            <div class="course-card">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[25px] max-w-[1100px] mx-auto">
 
-                <p class="badge">
+            <div
+                class="p-[30px] bg-gradient-to-br from-white to-[#f0f7f8] border border-[#d6e2e7] rounded-[14px] shadow-[0_5px_15px_rgba(20,50,70,0.07)] transition duration-200 hover:-translate-y-[5px] hover:shadow-[0_10px_22px_rgba(20,50,70,0.11)]">
+
+                <p
+                    class="inline-block bg-[#dff3f1] text-[#176f69] px-3 py-1.5 rounded-[20px] text-[13px] font-semibold m-0">
                     🔥 Most Popular
                 </p>
 
-                <h2>
+                <h2 class="text-[#102a43] my-[15px]">
                     Web Development
                 </h2>
 
-                <p>
+                <p class="text-[#66788a] leading-[1.6]">
                     HTML, CSS, JavaScript
                 </p>
 
-                <p>
+                <p class="text-[#66788a] leading-[1.6]">
                     Duration: 3 Months
                 </p>
 
-                <a href="./webcourse.html" class="view-course">
+                <a
+                    href="./webcourse.html"
+                    class="inline-block mt-[15px] px-[18px] py-[10px] bg-[#102a43] text-white rounded-[7px] no-underline transition duration-200 hover:bg-[#16877f]">
                     View Course
                 </a>
 
             </div>
 
 
-            <div class="course-card">
+            <div
+                class="p-[30px] bg-gradient-to-br from-white to-[#f0f7f8] border border-[#d6e2e7] rounded-[14px] shadow-[0_5px_15px_rgba(20,50,70,0.07)] transition duration-200 hover:-translate-y-[5px] hover:shadow-[0_10px_22px_rgba(20,50,70,0.11)]">
 
-                <p class="badge">
+                <p
+                    class="inline-block bg-[#dff3f1] text-[#176f69] px-3 py-1.5 rounded-[20px] text-[13px] font-semibold m-0">
                     ⭐ Beginner Friendly
                 </p>
 
-                <h2>
+                <h2 class="text-[#102a43] my-[15px]">
                     Java Programming
                 </h2>
 
-                <p>
+                <p class="text-[#66788a] leading-[1.6]">
                     Java, OOP, Collections
                 </p>
 
-                <p>
+                <p class="text-[#66788a] leading-[1.6]">
                     Duration: 2.5 Months
                 </p>
 
-                <a href="javacourse.html" class="view-course">
+                <a
+                    href="javacourse.html"
+                    class="inline-block mt-[15px] px-[18px] py-[10px] bg-[#102a43] text-white rounded-[7px] no-underline transition duration-200 hover:bg-[#16877f]">
                     View Course
                 </a>
 
             </div>
 
 
-            <div class="course-card">
+            <div
+                class="p-[30px] bg-gradient-to-br from-white to-[#f0f7f8] border border-[#d6e2e7] rounded-[14px] shadow-[0_5px_15px_rgba(20,50,70,0.07)] transition duration-200 hover:-translate-y-[5px] hover:shadow-[0_10px_22px_rgba(20,50,70,0.11)]">
 
-                <p class="badge">
+                <p
+                    class="inline-block bg-[#dff3f1] text-[#176f69] px-3 py-1.5 rounded-[20px] text-[13px] font-semibold m-0">
                     🚀 Career Focused
                 </p>
 
-                <h2>
+                <h2 class="text-[#102a43] my-[15px]">
                     Python & Data Structures
                 </h2>
 
-                <p>
+                <p class="text-[#66788a] leading-[1.6]">
                     Python, Algorithms, Data Structures
                 </p>
 
-                <p>
+                <p class="text-[#66788a] leading-[1.6]">
                     Duration: 3 Months
                 </p>
 
-                <a href="dsacourse.html" class="view-course">
+                <a
+                    href="dsacourse.html"
+                    class="inline-block mt-[15px] px-[18px] py-[10px] bg-[#102a43] text-white rounded-[7px] no-underline transition duration-200 hover:bg-[#16877f]">
                     View Course
                 </a>
 
@@ -363,96 +458,306 @@
 
     <!-- ================= REGISTER ================= -->
 
-    <section class="registr">
+    <section
+        class="px-[5%] lg:px-[8%] py-[60px] lg:py-20 bg-gradient-to-br from-[#edf7f6] to-[#e8f0f5]">
 
-        <h1>
+        <h1
+            class="text-center text-[#102a43] mb-[10px]">
             Register
         </h1>
 
-        <p>
+        <p
+            class="text-[#66788a] text-center mb-[35px]">
             Create an account to access campus services and report campus problems.
         </p>
 
 
-        <form>
+        <form
+            id="registrationForm"
+            class="w-full max-w-[850px] mx-auto my-[30px] p-[22px] md:p-[30px] bg-white border border-[#d8e2e8] rounded-xl shadow-[0_5px_18px_rgba(20,50,70,0.07)]">
 
-            <label>
-                Full Name *
-            </label>
-
-            <input type="text" name="name">
-
-
-            <label>
-                Student ID *
-            </label>
-
-            <input type="text" name="studentId">
+            <h2 class="text-[#102a43] text-2xl font-bold mb-7">
+                Student Registration
+            </h2>
 
 
-            <label>
-                Email *
-            </label>
+            <!-- Personal Information -->
 
-            <input type="email" name="email">
+            <div class="mb-8">
 
+                <h3 class="text-xl font-bold text-[#243b53] mb-5">
+                    Personal Information
+                </h3>
 
-            <label>
-                Phone Number *
-            </label>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-            <input type="tel" name="phone">
+                    <div>
+                        <label
+                            for="name"
+                            class="block text-[#34495e] text-sm font-semibold mb-1.5">
+                            Full Name <span class="text-red-400">(Required)</span>
+                        </label>
 
-
-            <label>
-                Password *
-            </label>
-
-            <input type="password" name="password">
-
-
-            <label>
-                Confirm Password *
-            </label>
-
-            <input type="password" name="confirmPassword">
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Full Name"
+                            required
+                            class="w-full p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad]">
+                    </div>
 
 
-            <label>
-                Department *
-            </label>
+                    <div>
+                        <label
+                            for="email"
+                            class="block text-[#34495e] text-sm font-semibold mb-1.5">
+                            Email Address <span class="text-red-400">(Required)</span>
+                        </label>
 
-            <select name="department">
-
-                <option>CSE</option>
-                <option>EEE</option>
-                <option>Business</option>
-                <option>English</option>
-                <option>Other</option>
-
-            </select>
-
-
-            <label>
-                Semester *
-            </label>
-
-            <select name="semester">
-
-                <option>1st Semester</option>
-                <option>2nd Semester</option>
-                <option>3rd Semester</option>
-                <option>4th Semester</option>
-                <option>5th Semester</option>
-                <option>6th Semester</option>
-                <option>7th Semester</option>
-                <option>8th Semester</option>
-
-            </select>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Email Address"
+                            required
+                            class="w-full p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad]">
+                    </div>
 
 
-            <button type="submit">
-                Register
+                    <div>
+                        <label
+                            for="phone"
+                            class="block text-[#34495e] text-sm font-semibold mb-1.5">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Phone Number"
+                            class="w-full p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad]">
+                    </div>
+
+
+                    <div>
+                        <label
+                            for="dob"
+                            class="block text-[#34495e] text-sm font-semibold mb-1.5">
+                            Date of Birth
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            class="w-full p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad]">
+                    </div>
+
+
+                    <div>
+                        <label
+                            for="gender"
+                            class="block text-[#34495e] text-sm font-semibold mb-1.5">
+                            Gender
+                        </label>
+
+                        <select
+                            id="gender"
+                            class="w-full p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad]">
+
+                            <option value="">Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Academic Information -->
+
+            <div class="mb-8">
+
+                <h3 class="text-xl font-bold text-[#243b53] mb-5">
+                    Academic Information
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                    <div>
+                        <label
+                            for="institution"
+                            class="block text-[#34495e] text-sm font-semibold mb-1.5">
+                            University / College
+                        </label>
+
+                        <input
+                            type="text"
+                            id="institution"
+                            placeholder="University / College"
+                            class="w-full p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad]">
+                    </div>
+
+
+                    <div>
+                        <label
+                            for="department"
+                            class="block text-[#34495e] text-sm font-semibold mb-1.5">
+                            Department
+                        </label>
+
+                        <input
+                            type="text"
+                            id="department"
+                            placeholder="Department"
+                            class="w-full p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad]">
+                    </div>
+
+
+                    <div>
+                        <label
+                            for="semester"
+                            class="block text-[#34495e] text-sm font-semibold mb-1.5">
+                            Semester
+                        </label>
+
+                        <select
+                            id="semester"
+                            class="w-full p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad]">
+
+                            <option value="">Select Semester</option>
+                            <option>1st Semester</option>
+                            <option>2nd Semester</option>
+                            <option>3rd Semester</option>
+                            <option>4th Semester</option>
+                            <option>5th Semester</option>
+                            <option>6th Semester</option>
+                            <option>7th Semester</option>
+                            <option>8th Semester</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+                        <label
+                            for="studentId"
+                            class="block text-[#34495e] text-sm font-semibold mb-1.5">
+                            Student ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentId"
+                            placeholder="Student ID"
+                            class="w-full p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad]">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Learning Information -->
+
+            <div class="mb-8">
+
+                <h3 class="text-xl font-bold text-[#243b53] mb-5">
+                    Learning Information
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                    <div>
+                        <label
+                            for="course"
+                            class="block text-[#34495e] text-sm font-semibold mb-1.5">
+                            Choose a Course <span class="text-red-400">(Required)</span>
+                        </label>
+
+                        <select
+                            id="course"
+                            required
+                            class="w-full p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad]">
+
+                            <option value="">Select Course</option>
+                            <option>Programming</option>
+                            <option>Web Development</option>
+                            <option>Database</option>
+                            <option>Cybersecurity</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+                        <label
+                            for="skillLevel"
+                            class="block text-[#34495e] text-sm font-semibold mb-1.5">
+                            Current Skill Level
+                        </label>
+
+                        <select
+                            id="skillLevel"
+                            class="w-full p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad]">
+
+                            <option value="">Current Skill Level</option>
+                            <option>Complete Beginner</option>
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mt-5">
+
+                    <label
+                        for="reason"
+                        class="block text-[#34495e] text-sm font-semibold mb-1.5">
+                        Why do you want to learn?
+                    </label>
+
+                    <textarea
+                        id="reason"
+                        placeholder="Why do you want to learn?"
+                        class="w-full min-h-[110px] p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad] resize-y"></textarea>
+
+                </div>
+
+            </div>
+
+<div class="flex flex-col gap-2">
+    <label
+        for="password"
+        class="text-sm font-semibold text-slate-700"
+    >
+        Create Password <span class="text-red-400">(Required)</span>
+    </label>
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Create a password"
+        required
+        class="w-full border border-slate-300 rounded-lg px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200"
+    >
+</div>
+            <button
+                type="submit"
+                class="w-full mt-3 px-3 py-3 bg-[#102a43] text-white border-none rounded-[7px] text-[15px] cursor-pointer hover:bg-[#16877f] transition duration-200">
+
+                Register Now
+
             </button>
 
         </form>
@@ -462,73 +767,107 @@
 
     <!-- ================= EVENTS ================= -->
 
-    <section class="events-section">
+    <section
+        class="px-[5%] lg:px-[8%] py-[60px] lg:py-20 bg-white">
 
-        <h1>
+        <h1
+            class="text-center text-[#102a43] mb-[35px]">
             Events & Calendar
         </h1>
 
-        <div class="calendar">
 
-            <h2>
+        <div
+            class="w-full max-w-[650px] mx-auto my-[30px] p-3 md:p-[22px] bg-[#f4f9fa] border border-[#d6e3e7] rounded-xl">
+
+            <h2
+                class="text-center text-[#243b53] text-xl mt-0">
                 AUGUST 2026
             </h2>
 
-            <div class="days">
 
-                <span>Mon</span>
-                <span>Tue</span>
-                <span>Wed</span>
-                <span>Thu</span>
-                <span>Fri</span>
-                <span>Sat</span>
-                <span>Sun</span>
+            <div
+                class="grid grid-cols-7 text-center">
+
+                <span
+                    class="p-[7px] md:p-[10px] bg-[#102a43] text-white border border-[#294b66] text-[11px] md:text-[13px]">
+                    Mon
+                </span>
+
+                <span
+                    class="p-[7px] md:p-[10px] bg-[#102a43] text-white border border-[#294b66] text-[11px] md:text-[13px]">
+                    Tue
+                </span>
+
+                <span
+                    class="p-[7px] md:p-[10px] bg-[#102a43] text-white border border-[#294b66] text-[11px] md:text-[13px]">
+                    Wed
+                </span>
+
+                <span
+                    class="p-[7px] md:p-[10px] bg-[#102a43] text-white border border-[#294b66] text-[11px] md:text-[13px]">
+                    Thu
+                </span>
+
+                <span
+                    class="p-[7px] md:p-[10px] bg-[#102a43] text-white border border-[#294b66] text-[11px] md:text-[13px]">
+                    Fri
+                </span>
+
+                <span
+                    class="p-[7px] md:p-[10px] bg-[#102a43] text-white border border-[#294b66] text-[11px] md:text-[13px]">
+                    Sat
+                </span>
+
+                <span
+                    class="p-[7px] md:p-[10px] bg-[#102a43] text-white border border-[#294b66] text-[11px] md:text-[13px]">
+                    Sun
+                </span>
 
             </div>
 
 
-            <div class="dates">
+            <div class="grid grid-cols-7 text-center">
 
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9]"></span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9]"></span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9]"></span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9]"></span>
 
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">1</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">2</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">3</span>
 
-                <span>4</span>
-                <span>5</span>
-                <span>6</span>
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>10</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">4</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">5</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">6</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">7</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">8</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">9</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">10</span>
 
-                <span>11</span>
-                <span>12</span>
-                <span>13</span>
-                <span>14</span>
-                <span>15</span>
-                <span>16</span>
-                <span>17</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">11</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">12</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">13</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">14</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">15</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">16</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">17</span>
 
-                <span>18</span>
-                <span>19</span>
-                <span>20</span>
-                <span>21</span>
-                <span>22</span>
-                <span>23</span>
-                <span>24</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">18</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">19</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">20</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">21</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">22</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">23</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">24</span>
 
-                <span>25</span>
-                <span>26</span>
-                <span>27</span>
-                <span>28</span>
-                <span>29</span>
-                <span>30</span>
-                <span>31</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">25</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">26</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">27</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">28</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">29</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">30</span>
+                <span class="min-h-[38px] md:min-h-[45px] flex items-center justify-center bg-white border border-[#dce5e9] text-[#526273] text-xs md:text-sm hover:bg-[#e3f4f2]">31</span>
 
             </div>
 
@@ -537,44 +876,49 @@
 
         <!-- Upcoming Events -->
 
-        <h2 class="upcoming-title">
+        <h2
+            class="text-center text-[#102a43] mt-[55px] mb-[25px]">
             Upcoming Events
         </h2>
 
-        <div class="upcomingEventsection">
 
-            <div class="event">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-[25px] max-w-[900px] mx-auto">
 
-                <h3>
+            <div
+                class="p-[25px] bg-[#f7fafb] text-[#526273] border border-[#d8e2e8] rounded-xl">
+
+                <h3 class="text-[#243b53] mt-0">
                     Tech Fest 2026
                 </h3>
 
-                <p>
+                <p class="text-left text-sm">
                     📅 September 12
                 </p>
 
-                <p>
+                <p class="text-left text-sm">
                     📍 Auditorium
                 </p>
 
-                <p>
+                <p class="text-left text-sm">
                     Technology exhibition and competition.
                 </p>
 
             </div>
 
 
-            <div class="event">
+            <div
+                class="p-[25px] bg-[#f7fafb] text-[#526273] border border-[#d8e2e8] rounded-xl">
 
-                <h3>
+                <h3 class="text-[#243b53] mt-0">
                     Programming Workshop
                 </h3>
 
-                <p>
+                <p class="text-left text-sm">
                     📅 September 15
                 </p>
 
-                <p>
+                <p class="text-left text-sm">
                     📍 Lab 304
                 </p>
 
@@ -587,48 +931,54 @@
 
     <!-- ================= WHAT YOU'LL BUILD ================= -->
 
-    <section class="WhatYouWillBuild">
+    <section
+        class="px-[5%] lg:px-[8%] py-[60px] lg:py-[75px] bg-[#edf4f6]">
 
-        <h2>
+        <h2
+            class="text-center text-[#102a43] mb-10">
             What You'll Build
         </h2>
 
 
-        <div class="build-items">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[25px] max-w-[1050px] mx-auto">
 
-            <div class="report">
+            <div
+                class="min-h-[150px] p-[25px] bg-white border border-[#d8e2e8] rounded-xl">
 
-                <h3>
+                <h3 class="text-[#243b53] mt-0">
                     🌐 Websites
                 </h3>
 
-                <p>
+                <p class="text-[#66788a] text-sm">
                     Build responsive websites and interactive web applications.
                 </p>
 
             </div>
 
 
-            <div class="report">
+            <div
+                class="min-h-[150px] p-[25px] bg-white border border-[#d8e2e8] rounded-xl">
 
-                <h3>
+                <h3 class="text-[#243b53] mt-0">
                     🖥️ Java Applications
                 </h3>
 
-                <p>
+                <p class="text-[#66788a] text-sm">
                     Create desktop applications using Java and OOP.
                 </p>
 
             </div>
 
 
-            <div class="report">
+            <div
+                class="min-h-[150px] p-[25px] bg-white border border-[#d8e2e8] rounded-xl">
 
-                <h3>
+                <h3 class="text-[#243b53] mt-0">
                     🧩 Problem Solving
                 </h3>
 
-                <p>
+                <p class="text-[#66788a] text-sm">
                     Develop strong logical thinking through coding challenges.
                 </p>
 
@@ -641,109 +991,138 @@
 
     <!-- ================= HELP & CONTACT ================= -->
 
-    <section id="contact">
+    <section
+        id="contact"
+        class="px-[5%] lg:px-[8%] py-[60px] lg:py-[75px] bg-[#f7fafb]">
 
-        <h1>
+        <h1
+            class="text-center text-[#102a43] text-[30px] lg:text-[34px] mb-[55px]">
             Help & Contact
         </h1>
 
 
-        <h2>
+        <h2
+            class="max-w-[900px] mx-auto mt-[35px] mb-5 text-[#243b53] text-[23px]">
             Frequently Asked Questions
         </h2>
 
 
-        <div class="faq">
+        <div
+            class="w-full max-w-[900px] p-5 my-[15px] mx-auto bg-white border border-[#d8e2e8] rounded-[10px]">
 
-            <h3>
+            <h3 class="text-[#34495e] mt-0">
                 How do I report a classroom problem?
             </h3>
 
-            <p>
+            <p class="text-[#718096] text-left">
                 Go to Report Problem and submit the form.
             </p>
 
         </div>
 
 
-        <div class="faq">
+        <div
+            class="w-full max-w-[900px] p-5 my-[15px] mx-auto bg-white border border-[#d8e2e8] rounded-[10px]">
 
-            <h3>
+            <h3 class="text-[#34495e] mt-0">
                 Where is the library?
             </h3>
 
-            <p>
+            <p class="text-[#718096] text-left">
                 Building A, 3rd floor.
             </p>
 
         </div>
 
 
-        <div class="faq">
+        <div
+            class="w-full max-w-[900px] p-5 my-[15px] mx-auto bg-white border border-[#d8e2e8] rounded-[10px]">
 
-            <h3>
+            <h3 class="text-[#34495e] mt-0">
                 Who do I contact for Wi-Fi problems?
             </h3>
 
-            <p>
+            <p class="text-[#718096] text-left">
                 Contact the IT Support Desk.
             </p>
 
         </div>
 
 
-        <h2>
+        <h2
+            class="max-w-[900px] mx-auto mt-[35px] mb-5 text-[#243b53] text-[23px]">
             Contact Campus Support
         </h2>
 
 
-        <div class="contact">
+        <div
+            class="w-full max-w-[900px] p-[22px] my-5 mx-auto bg-[#e8f3f2] border border-[#c8e2df] rounded-[10px]">
 
-            <p>
+            <p class="text-[#34495e] text-left">
                 📞 Phone: 01234-567890
             </p>
 
-            <p>
+            <p class="text-[#34495e] text-left">
                 📧 Email: support@campus.com
             </p>
 
-            <p>
+            <p class="text-[#34495e] text-left">
                 📍 Address: Main Campus
             </p>
 
         </div>
 
 
-        <h2>
+        <h2
+            class="max-w-[900px] mx-auto mt-[35px] mb-5 text-[#243b53] text-[23px]">
             Send a Message
         </h2>
 
 
-        <form>
+        <form
+            class="w-full max-w-[500px] mx-auto my-[30px] p-[22px] md:p-[30px] bg-white border border-[#d8e2e8] rounded-xl shadow-[0_5px_18px_rgba(20,50,70,0.07)]">
 
-            <label>
+            <label
+                for="contactName"
+                class="block text-[#34495e] text-sm font-semibold mt-[15px] mb-1.5">
                 Name
             </label>
 
-            <input type="text">
+            <input
+                type="text"
+                id="contactName"
+                class="w-full p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad]">
 
 
-            <label>
+            <label
+                for="contactEmail"
+                class="block text-[#34495e] text-sm font-semibold mt-[15px] mb-1.5">
                 Email
             </label>
 
-            <input type="email">
+            <input
+                type="email"
+                id="contactEmail"
+                class="w-full p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad]">
 
 
-            <label>
+            <label
+                for="message"
+                class="block text-[#34495e] text-sm font-semibold mt-[15px] mb-1.5">
                 Message
             </label>
 
-            <textarea></textarea>
+            <textarea
+                id="message"
+                class="w-full h-[110px] p-[11px] bg-[#f8fafb] border border-[#cbd8df] rounded-md outline-none focus:border-[#35b7ad] resize-y"></textarea>
 
 
-            <button type="submit">
+            <button
+                type="submit"
+                class="w-full mt-[25px] p-3 bg-[#102a43] text-white border-none rounded-[7px] text-[15px] cursor-pointer hover:bg-[#16877f] transition duration-200">
+
                 Send Message
+
             </button>
 
         </form>
@@ -753,22 +1132,94 @@
 
     <!-- ================= FOOTER ================= -->
 
-    <footer>
+    <footer
+        class="py-[35px] px-5 bg-[#102a43] text-white text-center">
 
-        <h3>
+        <h3 class="mb-2">
             CSE Academy
         </h3>
 
-        <p>
+        <p class="text-[#cbd8e2] text-[13px] mb-[5px]">
             Learn. Build. Grow.
         </p>
 
-        <p>
+        <p class="text-[#cbd8e2] text-[13px] mb-[5px]">
             © 2026 CSE Academy
         </p>
 
     </footer>
 
+
+    <!-- ================= JAVASCRIPT ================= -->
+<script>
+
+const registrationForm =
+    document.getElementById("registrationForm");
+
+registrationForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const student = {
+
+        name: document.getElementById("name").value,
+
+        email: document.getElementById("email").value,
+
+        password: document.getElementById("password").value,
+
+        phone: document.getElementById("phone").value,
+
+        dob: document.getElementById("dob").value,
+
+        gender: document.getElementById("gender").value,
+
+        institution:
+            document.getElementById("institution").value,
+
+        department:
+            document.getElementById("department").value,
+
+        semester:
+            document.getElementById("semester").value,
+
+        studentId:
+            document.getElementById("studentId").value,
+
+        course:
+            document.getElementById("course").value,
+
+        skillLevel:
+            document.getElementById("skillLevel").value,
+
+        reason:
+            document.getElementById("reason").value
+    };
+
+
+    // Save student information in Local Storage
+
+    localStorage.setItem(
+        "student",
+        JSON.stringify(student)
+    );
+
+
+    alert("Registration successful!");
+
+
+    // Clear the form
+
+    registrationForm.reset();
+
+
+    // Go to login page
+
+    window.location.href = "login.html";
+
+});
+
+</script>
 </body>
 
 </html>
