@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSE Academy - Projects</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f5f7fa] text-[#102a43]">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <h1 class="text-2xl font-bold">
+                CSE Academy
+            </h1>
+
+            <div class="flex gap-6 items-center">
+                <a href="index.html" class="hover:text-[#16877f]">Home</a>
+                <a href="#" class="text-[#16877f] font-semibold">Projects</a>
+                <a href="index.html#contact" class="hover:text-[#16877f]">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="text-center py-16 px-6">
+
+        <p class="text-[#16877f] font-semibold mb-3">
+            INTERMEDIATE PROJECTS
+        </p>
+
+        <h1 class="text-4xl md:text-5xl font-bold mb-5">
+            Learn by Building
+        </h1>
+
+        <p class="max-w-2xl mx-auto text-gray-600">
+            Explore practical projects and see how real applications
+            can be designed and built using CSE skills.
+        </p>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section class="max-w-6xl mx-auto px-6 pb-16">
+
+        <div class="grid md:grid-cols-2 gap-6">
+
+
+            <!-- Library -->
+            <div class="bg-white rounded-xl shadow-sm border p-6">
+
+                <div class="text-4xl mb-4">📚</div>
+
+                <h2 class="text-2xl font-bold mb-2">
+                    Library Management System
+                </h2>
+
+                <p class="text-gray-600 mb-4">
+                    A system for managing books, members and borrowing
+                    activities in a library.
+                </p>
+
+                <div class="flex gap-2 flex-wrap mb-5">
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">
+                        Java
+                    </span>
+
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">
+                        OOP
+                    </span>
+
+                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
+                        MySQL
+                    </span>
+                </div>
+
+                <button
+                    onclick="showPrototype('library')"
+                    class="px-5 py-2.5 bg-[#102a43] text-white rounded-md hover:bg-[#16877f] transition">
+                    View Prototype
+                </button>
+
+            </div>
+
+
+            <!-- Student -->
+            <div class="bg-white rounded-xl shadow-sm border p-6">
+
+                <div class="text-4xl mb-4">🎓</div>
+
+                <h2 class="text-2xl font-bold mb-2">
+                    Student Management System
+                </h2>
+
+                <p class="text-gray-600 mb-4">
+                    Manage students, courses, departments and academic
+                    results from one system.
+                </p>
+
+                <div class="flex gap-2 flex-wrap mb-5">
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">
+                        Java
+                    </span>
+
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">
+                        OOP
+                    </span>
+
+                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
+                        Database
+                    </span>
+                </div>
+
+                <button
+                    onclick="showPrototype('student')"
+                    class="px-5 py-2.5 bg-[#102a43] text-white rounded-md hover:bg-[#16877f] transition">
+                    View Prototype
+                </button>
+
+            </div>
+
+
+            <!-- E-commerce -->
+            <div class="bg-white rounded-xl shadow-sm border p-6">
+
+                <div class="text-4xl mb-4">🛒</div>
+
+                <h2 class="text-2xl font-bold mb-2">
+                    E-Commerce Website
+                </h2>
+
+                <p class="text-gray-600 mb-4">
+                    A basic online shopping platform with products,
+                    categories and a shopping cart.
+                </p>
+
+                <div class="flex gap-2 flex-wrap mb-5">
+                    <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm">
+                        HTML
+                    </span>
+
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">
+                        CSS
+                    </span>
+
+                    <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">
+                        JavaScript
+                    </span>
+                </div>
+
+                <button
+                    onclick="showPrototype('shop')"
+                    class="px-5 py-2.5 bg-[#102a43] text-white rounded-md hover:bg-[#16877f] transition">
+                    View Prototype
+                </button>
+
+            </div>
+
+
+            <!-- Quiz -->
+            <div class="bg-white rounded-xl shadow-sm border p-6">
+
+                <div class="text-4xl mb-4">📝</div>
+
+                <h2 class="text-2xl font-bold mb-2">
+                    Quiz Application
+                </h2>
+
+                <p class="text-gray-600 mb-4">
+                    An interactive quiz application where students can
+                    answer questions and check their scores.
+                </p>
+
+                <div class="flex gap-2 flex-wrap mb-5">
+                    <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm">
+                        HTML
+                    </span>
+
+                    <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">
+                        JavaScript
+                    </span>
+                </div>
+
+                <button
+                    onclick="showPrototype('quiz')"
+                    class="px-5 py-2.5 bg-[#102a43] text-white rounded-md hover:bg-[#16877f] transition">
+                    View Prototype
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Prototype Section -->
+    <section
+        id="prototypeSection"
+        class="hidden bg-[#102a43] py-16 px-6">
+
+        <div class="max-w-5xl mx-auto">
+
+            <div class="flex justify-between items-center mb-6">
+
+                <h2
+                    id="prototypeTitle"
+                    class="text-3xl font-bold text-white">
+                </h2>
+
+                <button
+                    onclick="closePrototype()"
+                    class="text-white border border-white px-4 py-2 rounded-md hover:bg-white hover:text-[#102a43]">
+                    Close
+                </button>
+
+            </div>
+
+
+            <!-- Prototype Box -->
+            <div
+                id="prototypeContent"
+                class="bg-white rounded-xl p-6 min-h-[350px]">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#081c2c] text-white text-center py-8">
+
+        <h2 class="font-bold text-xl mb-2">
+            CSE Academy
+        </h2>
+
+        <p class="text-gray-400">
+            Learn CSE. Build Skills. Start Your Career.
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        function showPrototype(project) {
+
+            const section = document.getElementById("prototypeSection");
+            const title = document.getElementById("prototypeTitle");
+            const content = document.getElementById("prototypeContent");
+
+            section.classList.remove("hidden");
+
+
+            if (project === "library") {
+
+                title.innerText = "Library Management System";
+
+                content.innerHTML = `
+
+                    <div class="flex gap-6 border-b pb-4 mb-6">
+                        <button class="font-semibold text-[#16877f]">
+                            Dashboard
+                        </button>
+
+                        <button class="text-gray-500">
+                            Books
+                        </button>
+
+                        <button class="text-gray-500">
+                            Members
+                        </button>
+
+                        <button class="text-gray-500">
+                            Borrowing
+                        </button>
+                    </div>
+
+
+                    <h3 class="text-2xl font-bold mb-6">
+                        Dashboard
+                    </h3>
+
+
+                    <div class="grid md:grid-cols-3 gap-4 mb-8">
+
+                        <div class="bg-blue-50 p-5 rounded-lg">
+                            <p class="text-gray-500">Total Books</p>
+                            <p class="text-3xl font-bold">120</p>
+                        </div>
+
+                        <div class="bg-green-50 p-5 rounded-lg">
+                            <p class="text-gray-500">Members</p>
+                            <p class="text-3xl font-bold">86</p>
+                        </div>
+
+                        <div class="bg-purple-50 p-5 rounded-lg">
+                            <p class="text-gray-500">Borrowed</p>
+                            <p class="text-3xl font-bold">34</p>
+                        </div>
+
+                    </div>
+
+
+                    <h3 class="font-bold text-xl mb-4">
+                        Recent Books
+                    </h3>
+
+                    <div class="space-y-3">
+
+                        <div class="flex justify-between border-b pb-3">
+                            <span>The Great Gatsby</span>
+                            <span class="text-green-600">
+                                Available
+                            </span>
+                        </div>
+
+                        <div class="flex justify-between border-b pb-3">
+                            <span>Clean Code</span>
+                            <span class="text-red-500">
+                                Borrowed
+                            </span>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <span>Java Programming</span>
+                            <span class="text-green-600">
+                                Available
+                            </span>
+                        </div>
+
+                    </div>
+                `;
+            }
+
+
+            else if (project === "student") {
+
+                title.innerText = "Student Management System";
+
+                content.innerHTML = `
+
+                    <div class="flex gap-6 border-b pb-4 mb-6">
+                        <button class="font-semibold text-[#16877f]">
+                            Dashboard
+                        </button>
+
+                        <button class="text-gray-500">
+                            Students
+                        </button>
+
+                        <button class="text-gray-500">
+                            Courses
+                        </button>
+
+                        <button class="text-gray-500">
+                            Results
+                        </button>
+                    </div>
+
+
+                    <div class="flex gap-3 mb-6">
+
+                        <input
+                            type="text"
+                            placeholder="Search student..."
+                            class="border rounded-md px-4 py-2 flex-1">
+
+                        <button
+                            class="bg-[#102a43] text-white px-5 rounded-md">
+                            Search
+                        </button>
+
+                    </div>
+
+
+                    <div class="overflow-x-auto">
+
+                        <table class="w-full text-left">
+
+                            <thead>
+                                <tr class="border-b">
+                                    <th class="p-3">ID</th>
+                                    <th class="p-3">Name</th>
+                                    <th class="p-3">Department</th>
+                                    <th class="p-3">Grade</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr class="border-b">
+                                    <td class="p-3">101</td>
+                                    <td class="p-3">Rahim</td>
+                                    <td class="p-3">CSE</td>
+                                    <td class="p-3">A</td>
+                                </tr>
+
+                                <tr class="border-b">
+                                    <td class="p-3">102</td>
+                                    <td class="p-3">Karim</td>
+                                    <td class="p-3">CSE</td>
+                                    <td class="p-3">A-</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="p-3">103</td>
+                                    <td class="p-3">Hasan</td>
+                                    <td class="p-3">EEE</td>
+                                    <td class="p-3">B+</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <button class="mt-6 bg-[#16877f] text-white px-5 py-2 rounded-md">
+                        + Add Student
+                    </button>
+                `;
+            }
+
+
+            else if (project === "shop") {
+
+                title.innerText = "TechStore E-Commerce";
+
+                content.innerHTML = `
+
+                    <div class="flex justify-between items-center border-b pb-5 mb-6">
+
+                        <h3 class="text-2xl font-bold">
+                            TechStore
+                        </h3>
+
+                        <button class="bg-[#102a43] text-white px-4 py-2 rounded-md">
+                            🛒 Cart (2)
+                        </button>
+
+                    </div>
+
+
+                    <input
+                        type="text"
+                        placeholder="Search products..."
+                        class="border rounded-md px-4 py-2 w-full mb-6">
+
+
+                    <div class="grid md:grid-cols-3 gap-5">
+
+                        <div class="border rounded-lg p-5">
+
+                            <div class="text-5xl mb-4">
+                                💻
+                            </div>
+
+                            <h3 class="font-bold text-lg">
+                                Laptop
+                            </h3>
+
+                            <p class="text-gray-500 mb-4">
+                                $800
+                            </p>
+
+                            <button class="bg-[#102a43] text-white px-4 py-2 rounded-md">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+
+                        <div class="border rounded-lg p-5">
+
+                            <div class="text-5xl mb-4">
+                                ⌨️
+                            </div>
+
+                            <h3 class="font-bold text-lg">
+                                Keyboard
+                            </h3>
+
+                            <p class="text-gray-500 mb-4">
+                                $50
+                            </p>
+
+                            <button class="bg-[#102a43] text-white px-4 py-2 rounded-md">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+
+                        <div class="border rounded-lg p-5">
+
+                            <div class="text-5xl mb-4">
+                                🎧
+                            </div>
+
+                            <h3 class="font-bold text-lg">
+                                Headphones
+                            </h3>
+
+                            <p class="text-gray-500 mb-4">
+                                $70
+                            </p>
+
+                            <button class="bg-[#102a43] text-white px-4 py-2 rounded-md">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+                `;
+            }
+
+
+            else if (project === "quiz") {
+
+                title.innerText = "CSE Quiz Application";
+
+                content.innerHTML = `
+
+                    <h3 class="text-2xl font-bold mb-2">
+                        Question 1
+                    </h3>
+
+                    <p class="text-gray-600 mb-6">
+                        Which language is mainly used for web page
+                        structure?
+                    </p>
+
+
+                    <div class="space-y-3">
+
+                        <button class="block w-full text-left border p-4 rounded-md hover:bg-gray-100">
+                            A. Java
+                        </button>
+
+                        <button class="block w-full text-left border p-4 rounded-md hover:bg-gray-100">
+                            B. HTML
+                        </button>
+
+                        <button class="block w-full text-left border p-4 rounded-md hover:bg-gray-100">
+                            C. Python
+                        </button>
+
+                        <button class="block w-full text-left border p-4 rounded-md hover:bg-gray-100">
+                            D. C++
+                        </button>
+
+                    </div>
+
+
+                    <button class="mt-6 bg-[#16877f] text-white px-6 py-2 rounded-md">
+                        Next Question
+                    </button>
+
+                `;
+            }
+
+
+            section.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+
+        function closePrototype() {
+
+            const section = document.getElementById("prototypeSection");
+
+            section.classList.add("hidden");
+
+        }
+
+    </script>
+
+</body>
+</html>
