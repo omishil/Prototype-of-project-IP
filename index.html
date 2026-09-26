@@ -1162,10 +1162,7 @@
     <!-- ================= JAVASCRIPT ================= -->
 
     <script>
-const menuBtn = document.getElementById("menuBtn");
- const mobileMenu = document.getElementById("mobileMenu"); 
- menuBtn.addEventListener("click", () => 
- { mobileMenu.classList.toggle("hidden");}
+
         const registrationForm =
             document.getElementById("registrationForm");
 
@@ -1209,28 +1206,21 @@ const menuBtn = document.getElementById("menuBtn");
                     document.getElementById("reason").value
             };
 
+ // Get existing students
+    let students = JSON.parse(localStorage.getItem("students")) || [];
 
-            // Save student information in Local Storage
+    // Add new student
+    students.push(student);
 
-            localStorage.setItem(
-                "student",
-                JSON.stringify(student)
-            );
+    // Save all students
+    localStorage.setItem("students", JSON.stringify(students));
 
+    alert("Registration successful!");
 
-            alert("Registration successful!");
+    registrationForm.reset();
 
-
-            // Clear the form
-
-            registrationForm.reset();
-
-
-            // Go to login page
-
-            window.location.href = "login.html";
-
-        });
+    window.location.href = "login.html";
+});
 
     </script>
 

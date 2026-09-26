@@ -4,40 +4,26 @@ form.addEventListener("submit", function(event) {
 
     event.preventDefault();
 
-    const email =
-        document.querySelector("#email").value;
+    const email = document.querySelector("#email").value;
+    const password = document.querySelector("#password").value;
 
-    const password =
-        document.querySelector("#password").value;
+    // Get all registered students
+    const students = JSON.parse(localStorage.getItem("students")) || [];
 
+    console.log("Students:", students);
+    console.log("Entered email:", email);
+    console.log("Entered password:", password);
 
-    // Get registered student
+    // Find matching student
+    const student = students.find(function(s) {
+        return s.email === email && s.password === password;
+    });
 
-    const student =
-        JSON.parse(localStorage.getItem("student"));
-
-
-    // Check if student exists
-
-    if (!student) {
-
-        alert("No account found. Please register first.");
-
-        return;
-    }
-
-
-    // Check email and password
-
-    if (
-        email === student.email &&
-        password === student.password
-    ) {
+    if (student) {
 
         alert("Login successful!");
 
-        window.location.href =
-            "student-dashboard.html";
+        window.location.href = "student-dashboard.html";
 
     } else {
 
