@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +53,6 @@
     <section class="max-w-6xl mx-auto px-6 pb-16">
 
         <div class="grid md:grid-cols-2 gap-6">
-
 
             <!-- Library -->
             <div class="bg-white rounded-xl shadow-sm border p-6">
@@ -268,6 +268,7 @@
                 content.innerHTML = `
 
                     <div class="flex gap-6 border-b pb-4 mb-6">
+
                         <button class="font-semibold text-[#16877f]">
                             Dashboard
                         </button>
@@ -283,6 +284,7 @@
                         <button class="text-gray-500">
                             Borrowing
                         </button>
+
                     </div>
 
 
@@ -294,18 +296,41 @@
                     <div class="grid md:grid-cols-3 gap-4 mb-8">
 
                         <div class="bg-blue-50 p-5 rounded-lg">
-                            <p class="text-gray-500">Total Books</p>
-                            <p class="text-3xl font-bold">120</p>
+
+                            <p class="text-gray-500">
+                                Total Books
+                            </p>
+
+                            <p class="text-3xl font-bold">
+                                120
+                            </p>
+
                         </div>
+
 
                         <div class="bg-green-50 p-5 rounded-lg">
-                            <p class="text-gray-500">Members</p>
-                            <p class="text-3xl font-bold">86</p>
+
+                            <p class="text-gray-500">
+                                Members
+                            </p>
+
+                            <p class="text-3xl font-bold">
+                                86
+                            </p>
+
                         </div>
 
+
                         <div class="bg-purple-50 p-5 rounded-lg">
-                            <p class="text-gray-500">Borrowed</p>
-                            <p class="text-3xl font-bold">34</p>
+
+                            <p class="text-gray-500">
+                                Borrowed
+                            </p>
+
+                            <p class="text-3xl font-bold">
+                                34
+                            </p>
+
                         </div>
 
                     </div>
@@ -315,27 +340,45 @@
                         Recent Books
                     </h3>
 
+
                     <div class="space-y-3">
 
                         <div class="flex justify-between border-b pb-3">
-                            <span>The Great Gatsby</span>
+
+                            <span>
+                                The Great Gatsby
+                            </span>
+
                             <span class="text-green-600">
                                 Available
                             </span>
+
                         </div>
 
+
                         <div class="flex justify-between border-b pb-3">
-                            <span>Clean Code</span>
+
+                            <span>
+                                Clean Code
+                            </span>
+
                             <span class="text-red-500">
                                 Borrowed
                             </span>
+
                         </div>
 
+
                         <div class="flex justify-between">
-                            <span>Java Programming</span>
+
+                            <span>
+                                Java Programming
+                            </span>
+
                             <span class="text-green-600">
                                 Available
                             </span>
+
                         </div>
 
                     </div>
@@ -350,6 +393,7 @@
                 content.innerHTML = `
 
                     <div class="flex gap-6 border-b pb-4 mb-6">
+
                         <button class="font-semibold text-[#16877f]">
                             Dashboard
                         </button>
@@ -365,10 +409,11 @@
                         <button class="text-gray-500">
                             Results
                         </button>
+
                     </div>
 
 
-                    <div class="flex gap-3 mb-6">
+                    <div class="flex flex-col sm:flex-row gap-3 mb-6">
 
                         <input
                             type="text"
@@ -376,7 +421,7 @@
                             class="border rounded-md px-4 py-2 flex-1">
 
                         <button
-                            class="bg-[#102a43] text-white px-5 rounded-md">
+                            class="bg-[#102a43] text-white px-5 py-2 rounded-md">
                             Search
                         </button>
 
@@ -388,35 +433,92 @@
                         <table class="w-full text-left">
 
                             <thead>
+
                                 <tr class="border-b">
-                                    <th class="p-3">ID</th>
-                                    <th class="p-3">Name</th>
-                                    <th class="p-3">Department</th>
-                                    <th class="p-3">Grade</th>
+
+                                    <th class="p-3">
+                                        ID
+                                    </th>
+
+                                    <th class="p-3">
+                                        Name
+                                    </th>
+
+                                    <th class="p-3">
+                                        Department
+                                    </th>
+
+                                    <th class="p-3">
+                                        Grade
+                                    </th>
+
                                 </tr>
+
                             </thead>
+
 
                             <tbody>
 
                                 <tr class="border-b">
-                                    <td class="p-3">101</td>
-                                    <td class="p-3">Rahim</td>
-                                    <td class="p-3">CSE</td>
-                                    <td class="p-3">A</td>
+
+                                    <td class="p-3">
+                                        101
+                                    </td>
+
+                                    <td class="p-3">
+                                        Rahim
+                                    </td>
+
+                                    <td class="p-3">
+                                        CSE
+                                    </td>
+
+                                    <td class="p-3">
+                                        A
+                                    </td>
+
                                 </tr>
+
 
                                 <tr class="border-b">
-                                    <td class="p-3">102</td>
-                                    <td class="p-3">Karim</td>
-                                    <td class="p-3">CSE</td>
-                                    <td class="p-3">A-</td>
+
+                                    <td class="p-3">
+                                        102
+                                    </td>
+
+                                    <td class="p-3">
+                                        Karim
+                                    </td>
+
+                                    <td class="p-3">
+                                        CSE
+                                    </td>
+
+                                    <td class="p-3">
+                                        A-
+                                    </td>
+
                                 </tr>
 
+
                                 <tr>
-                                    <td class="p-3">103</td>
-                                    <td class="p-3">Hasan</td>
-                                    <td class="p-3">EEE</td>
-                                    <td class="p-3">B+</td>
+
+                                    <td class="p-3">
+                                        103
+                                    </td>
+
+                                    <td class="p-3">
+                                        Hasan
+                                    </td>
+
+                                    <td class="p-3">
+                                        EEE
+                                    </td>
+
+                                    <td class="p-3">
+                                        B+
+                                    </td>
+
                                 </tr>
 
                             </tbody>
@@ -425,9 +527,12 @@
 
                     </div>
 
-                    <button class="mt-6 bg-[#16877f] text-white px-5 py-2 rounded-md">
+
+                    <button
+                        class="mt-6 bg-[#16877f] text-white px-5 py-2 rounded-md">
                         + Add Student
                     </button>
+
                 `;
             }
 
@@ -522,6 +627,7 @@
                         </div>
 
                     </div>
+
                 `;
             }
 
@@ -574,6 +680,7 @@
             section.scrollIntoView({
                 behavior: "smooth"
             });
+
         }
 
 
@@ -588,4 +695,5 @@
     </script>
 
 </body>
+
 </html>

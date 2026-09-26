@@ -10,54 +10,113 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100 min-h-screen">
+<body class="bg-slate-100 min-h-screen text-slate-800">
 
-    <div class="max-w-4xl mx-auto px-6 py-10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
 
-        <h1 class="text-3xl font-bold text-center text-gray-800">
-            Learning Roadmap
+        <h1 class="text-3xl sm:text-4xl font-bold text-center text-slate-800">
+            Web Development
         </h1>
 
-        <p class="text-center text-gray-500 mt-2 mb-8">
+        <p class="text-center text-slate-500 mt-2 mb-8">
             Track your learning progress
         </p>
 
 
         <!-- Web Development -->
 
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="containerOfInnerElements relative bg-white p-5 sm:p-7 rounded-xl shadow-sm border border-slate-200">
 
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">
-                💻 Web Development
+            <h2 class="text-2xl font-bold text-slate-800 mb-6">
+                 Web Development
             </h2>
 
-            <div class="space-y-4">
+            <div class="containerOfChecks space-y-5">
 
                 <label class="flex items-center gap-3">
-                    <input type="checkbox" class="w-5 h-5">
+                    <input type="checkbox" class="w-5 h-5 accent-teal-600">
                     <span>HTML</span>
                 </label>
 
                 <label class="flex items-center gap-3">
-                    <input type="checkbox" class="w-5 h-5">
+                    <input type="checkbox" class="w-5 h-5 accent-teal-600">
                     <span>CSS</span>
                 </label>
 
                 <label class="flex items-center gap-3">
-                    <input type="checkbox" class="w-5 h-5">
+                    <input type="checkbox" class="w-5 h-5 accent-teal-600">
                     <span>JavaScript</span>
                 </label>
 
                 <label class="flex items-center gap-3">
-                    <input type="checkbox" class="w-5 h-5">
+                    <input type="checkbox" class="w-5 h-5 accent-teal-600">
                     <span>React</span>
                 </label>
+
+            </div>
+
+
+            <div class="btn flex flex-col sm:flex-row gap-2 mt-7 sm:mt-6">
+
+                <button
+                    class="w-full sm:w-20 border border-slate-300 rounded-md px-2 py-2 bg-slate-800 text-white hover:bg-teal-600 transition">
+                    Add
+                </button>
+
+                <input
+                    type="text"
+                    class="btnInput w-full sm:w-[200px] h-10 border border-slate-300 rounded-md px-3 outline-none focus:border-teal-500"
+                    placeholder="Add a topic">
 
             </div>
 
         </div>
 
     </div>
+
+
+    <script>
+
+        // event for add
+        document.querySelector("button").addEventListener("click", () => {
+
+            let label = document.createElement("label");
+
+            let buttonContent = document.querySelector(".btnInput");
+
+            label.classList.add("flex", "items-center", "gap-3");
+
+            label.innerHTML =
+                `<input type="checkbox" class="w-5 h-5 accent-teal-600">
+                 <span>${buttonContent.value}</span>`;
+
+            let containerOFChecks =
+                document.querySelector(".containerOfChecks");
+
+            containerOFChecks.append(label);
+
+            let newCheckbx = label.querySelector("input");
+
+            newCheckbx.addEventListener("click", () => {
+
+                label.querySelector("span").classList.toggle("line-through");
+
+            });
+
+        });
+
+
+        document.querySelectorAll(".containerOfChecks input").forEach((input) => {
+
+            input.addEventListener("click", () => {
+
+                input.nextElementSibling.classList.toggle("line-through");
+
+            });
+
+        });
+
+    </script>
 
 </body>
 
