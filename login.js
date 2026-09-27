@@ -1,34 +1,112 @@
-const form = document.querySelector("form");
+// ================= PASSWORD HASH FUNCTION =================
 
-form.addEventListener("submit", function(event) {
+async function hashPassword(password) {
 
-    event.preventDefault();
+    const encoder = new TextEncoder();
 
-    const email = document.querySelector("#email").value;
-    const password = document.querySelector("#password").value;
+    const data = encoder.encode(password);
 
-    // Get all registered students
-    const students = JSON.parse(localStorage.getItem("students")) || [];
+    const hashBuffer = await crypto.subtle.digest(
+        "SHA-256",
+        data
+    );
 
-    console.log("Students:", students);
-    console.log("Entered email:", email);
-    console.log("Entered password:", password);
+    const hashArray = Array.from(
+        new Uint8Array(hashBuffer)
+    );
 
-    // Find matching student
-    const student = students.find(function(s) {
-        return s.email === email && s.password === password;
-    });
+    const hash = hashArray
+        .map(function(byte) {
+            return byte.toString(16).padStart(2, "0");
+        })
+        .join("");
 
-    if (student) {
+    return hash;
+}
 
-        alert("Login successful!");
 
-        window.location.href = "student-dashboard.html";
+// ================= LOGIN FORM =================
 
-    } else {
+const loginForm =
+    document.getElementById("loginForm");
 
-        alert("Invalid email or password!");
+
+loginForm.addEventListener(
+    "submit",
+    async function(event) {
+
+        event.preventDefault();
+
+
+        // ================= GET INPUT =================
+
+        const email =
+            document.getElementById("email").value.trim();
+
+        const password =
+            document.getElementById("password").value;
+
+
+        // ================= GET STUDENTS =================
+
+        const students =
+            JSON.parse(
+                localStorage.getItem("students")
+            ) || [];
+
+
+        console.log("Students:", students);
+        console.log("Entered email:", email);
+
+
+        // ================= HASH ENTERED PASSWORD =================
+
+        const hashedPassword =
+            await hashPassword(password);
+
+
+        console.log(
+            "Entered password hash:",
+            hashedPassword
+        );
+
+
+        // ================= FIND STUDENT =================
+
+        const student =
+            students.find(function(student) {
+
+                return (
+                    student.email === email &&
+                    student.password === hashedPassword
+                );
+
+            });
+
+
+        // ================= LOGIN RESULT =================
+
+        if (student) {
+
+            alert("Login successful!");
+
+            // Save logged-in student
+            localStorage.setItem(
+                "loggedInStudent",
+                JSON.stringify(student)
+            );
+
+            // Go to dashboard
+            window.location.href =
+                "student-dashboard.html";
+
+        } else {
+
+            alert(
+                "Invalid email or password!"
+            );
+
+        }
 
     }
-
-});
+);

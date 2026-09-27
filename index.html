@@ -1163,66 +1163,145 @@
 
     <script>
 
-        const registrationForm =
-            document.getElementById("registrationForm");
+    // ================= PASSWORD HASH FUNCTION =================
 
-        registrationForm.addEventListener("submit", function(event) {
+    async function hashPassword(password) {
+
+        const encoder = new TextEncoder();
+
+        const data = encoder.encode(password);
+
+        const hashBuffer = await crypto.subtle.digest(
+            "SHA-256",
+            data
+        );
+
+        const hashArray = Array.from(
+            new Uint8Array(hashBuffer)
+        );
+
+        const hash = hashArray
+            .map(function(byte) {
+                return byte.toString(16).padStart(2, "0");
+            })
+            .join("");
+
+        return hash;
+    }
+
+
+    // ================= REGISTRATION FORM =================
+
+    const registrationForm =
+        document.getElementById("registrationForm");
+
+
+    registrationForm.addEventListener(
+        "submit",
+        async function(event) {
 
             event.preventDefault();
 
+
+            // ================= GET REQUIRED DATA =================
+
+            const name =
+                document.getElementById("name").value.trim();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const course =
+                document.getElementById("course").value;
+
+            const password =
+                document.getElementById("password").value;
+
+
+            // ================= HASH PASSWORD =================
+
+            const hashedPassword =
+                await hashPassword(password);
+
+
+            // Check in console
+            console.log("Original password:", password);
+            console.log("Hashed password:", hashedPassword);
+
+
+            // ================= GET EXISTING STUDENTS =================
+
+            let students =
+                JSON.parse(
+                    localStorage.getItem("students")
+                ) || [];
+
+
+            // ================= CHECK EMAIL =================
+
+            const existingStudent =
+                students.find(function(student) {
+
+                    return student.email === email;
+
+                });
+
+
+            if (existingStudent) {
+
+                alert(
+                    "This email is already registered!"
+                );
+
+                return;
+            }
+
+
+            // ================= CREATE STUDENT =================
+
             const student = {
 
-                name: document.getElementById("name").value,
+                name: name,
 
-                email: document.getElementById("email").value,
+                email: email,
 
-                password: document.getElementById("password").value,
+                course: course,
 
-                phone: document.getElementById("phone").value,
+                password: hashedPassword
 
-                dob: document.getElementById("dob").value,
-
-                gender: document.getElementById("gender").value,
-
-                institution:
-                    document.getElementById("institution").value,
-
-                department:
-                    document.getElementById("department").value,
-
-                semester:
-                    document.getElementById("semester").value,
-
-                studentId:
-                    document.getElementById("studentId").value,
-
-                course:
-                    document.getElementById("course").value,
-
-                skillLevel:
-                    document.getElementById("skillLevel").value,
-
-                reason:
-                    document.getElementById("reason").value
             };
 
- // Get existing students
-    let students = JSON.parse(localStorage.getItem("students")) || [];
 
-    // Add new student
-    students.push(student);
+            // ================= SAVE STUDENT =================
 
-    // Save all students
-    localStorage.setItem("students", JSON.stringify(students));
+            students.push(student);
 
-    alert("Registration successful!");
 
-    registrationForm.reset();
+            localStorage.setItem(
+                "students",
+                JSON.stringify(students)
+            );
 
-    window.location.href = "login.html";
-});
 
-    </script>
+            // ================= SUCCESS =================
+
+            alert(
+                "Registration successful!"
+            );
+
+
+            // Clear form
+            registrationForm.reset();
+
+
+            // Go to login page
+            window.location.href =
+                "login.html";
+
+        }
+    );
+
+</script>
 
 </body>
 
